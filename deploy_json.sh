@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PROJDIR=$PWD
+WD=$(dirname "$0")
 S3_BUCKET='dev.komiyak.com'
 
-aws s3 sync $PROJDIR/prototypes/json/ s3://$S3_BUCKET/challeweb/json/
+aws s3 sync $WD/prototypes/json/ s3://$S3_BUCKET/challeweb/json/
 
