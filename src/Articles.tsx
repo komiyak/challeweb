@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-class Articles extends Component {
-    constructor(props) {
+class Articles extends Component<any, any> {
+    constructor(props: any) {
         super(props);
         this.state = {
             isLoaded: false,
@@ -28,7 +28,7 @@ class Articles extends Component {
         if (isLoaded) {
             return (
                 <div>
-                    {apiResponse.articles.map((item, index) => (
+                    {apiResponse.articles.map((item: any, index: number) => (
                         <article key={index} className="media">
                             <figure className="media-left">
                                 <p className="image is-96x96">
