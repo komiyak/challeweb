@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, {Component} from 'react';
 
 class Articles extends Component<any, any> {
     constructor(props: any) {
@@ -49,13 +48,13 @@ class Articles extends Component<any, any> {
                                 <nav className="level is-mobile">
                                     <div className="level-left">
                                         <a className="level-item">
-                                            <span className="icon is-small"><FontAwesomeIcon icon="reply"/></span>
+                                            <span className="icon is-small"><i className="fa fa-reply" aria-hidden="true"/></span>
                                         </a>
                                         <a className="level-item">
-                                            <span className="icon is-small"><FontAwesomeIcon icon="retweet"/></span>
+                                            <span className="icon is-small"><i className="fa fa-retweet" aria-hidden="true"/></span>
                                         </a>
                                         <a className="level-item">
-                                            <span className="icon is-small"><FontAwesomeIcon icon="heart"/></span>
+                                            <span className="icon is-small"><i className="fa fa-heart" aria-hidden="true"/></span>
                                         </a>
                                     </div>
                                 </nav>
@@ -69,4 +68,5 @@ class Articles extends Component<any, any> {
         }
     }
 }
+
 export default Articles;
